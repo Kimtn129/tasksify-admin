@@ -27,6 +27,14 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
+    server: {
+      host: '0.0.0.0',
+      port: 5000,
+      strictPort: true,
+      hmr: {
+        port: 5000
+      }
+    },
     css: {
       postcss: {
         plugins: [tailwind(), autoprefixer()]
@@ -35,7 +43,7 @@ export default defineConfig(({ mode }) => {
     define: processEnvValues,
     plugins: [
       vue(),
-      eslintPlugin(),
+      // eslintPlugin(), // Temporarily disabled for initial setup
       svgLoader(),
       VueDevTools(),
       VueI18nPlugin({

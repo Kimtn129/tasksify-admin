@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "made_for": "Made For",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "start": "Start For Free",
+    "login": "Login",
+    "no_notifications": "There's no new notifications!!!",
+    "logout": "Log out",
+    "confirm": "Are you sure you want to log out?"
+  }
+}

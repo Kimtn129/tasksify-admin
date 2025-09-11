@@ -1,0 +1,1 @@
+import{c as e,a as t,u as c,R as s,o as a}from"./index-Cn06d1yw.js";const r={class:"flex flex-col items-center justify-center min-h-screen back"},l={__name:"index",setup(n){return(o,_)=>(a(),e("div",r,[t(c(s))]))}};export{l as default};
