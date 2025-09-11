@@ -1,0 +1,30 @@
+.tab-item-style {
+  padding: 15px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 4px solid;
+  border-color: hsl(var(--border));
+  &.active {
+    border-color: hsl(var(--destructive));
+  }
+
+  .icon-style {
+    width: 27px;
+    height: 27px;
+    fill: hsl(var(--primary));
+    &.active {
+      fill: hsl(var(--destructive));
+    }
+  }
+
+  .text-style {
+    font-size: 1rem;
+    color: hsl(var(--secondary));
+    &.active {
+      font-weight: 600;
+      color: hsl(var(--primary));
+    }
+  }
+}

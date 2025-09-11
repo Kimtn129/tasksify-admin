@@ -1,0 +1,60 @@
+{
+  "common": {
+    "errors": {
+      "lbl_email_required": "Email is required",
+      "lbl_password_required": "Password is required",
+      "required": "This field is required",
+      "max_length": "Maximum {length} characters",
+      "something_went_wrong": "Something went wrong!",
+      "internet_connection_error": "No internet connection",
+      "email": "Invalid email"
+    },
+    "lbl_no_data_found": "Results not found",
+    "lbl_logout": "Log out",
+    "lbl_cancel": "Cancel",
+    "lbl_confirm": "Confirm",
+    "lbl_ok": "Ok",
+    "lbl_done": "Done",
+    "lbl_save": "Save",
+    "lbl_next": "Next",
+    "lbl_previous": "Previous",
+    "table": {
+      "results_not_found": "Results not found",
+      "data_not_found": "You don’t have any {itemName} yet"
+    },
+    "pagination": {
+      "description": "Showing {from} - {to} of {total}",
+      "rows_per_page": "Rows per page"
+    },
+    "table_action": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "invite": "Invite",
+      "download": "Download"
+    },
+    "search_field": {
+      "placeholder": "Search forms"
+    },
+    "header_sort": {
+      "asc": "ASC",
+      "desc": "DESC",
+      "none": "No Sorting"
+    },
+    "enforce_id": "#{id}",
+    "enforce_status": {
+      "fail": "Fail",
+      "pass": "Pass"
+    },
+    "unsaved_alert_dialog": {
+      "title": "Unsaved Changes",
+      "desc_line_1": "Are you sure you want to leave the page?",
+      "desc_line_2": "Any unsaved changes will be lost."
+    },
+    "delete_alert_dialog": {
+      "title": "Delete LOT?",
+      "desc_line_1": "Are you sure you want to delete this LOT?"
+    },
+    "select_option": "Select option"
+  }
+}

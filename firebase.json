@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "target": "tasksify-admin",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "./src",
+      "./tests",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
