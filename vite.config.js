@@ -33,7 +33,10 @@ export default defineConfig(({ mode }) => {
       strictPort: true,
       hmr: {
         port: 5000
-      }
+      },
+      allowedHosts: [
+        "083c184f-b0fa-4dce-9928-f185caccf8ba-00-kapmq3qtj1lo.pike.replit.dev"
+      ]
     },
     css: {
       postcss: {
@@ -56,11 +59,6 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias
-    },
-    server: {
-      allowedHosts: [
-        "083c184f-b0fa-4dce-9928-f185caccf8ba-00-kapmq3qtj1lo.pike.replit.dev"
-      ]
     }
   }
 })
