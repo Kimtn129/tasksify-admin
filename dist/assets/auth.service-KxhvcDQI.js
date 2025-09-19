@@ -1,1 +1,0 @@
-import{u as o,A as a,b as r,d as e,e as t,f as P}from"./vue-query.util-evjr9S1L.js";import{M as A}from"./index-Cn06d1yw.js";const _={login:s=>o(P,{params:s}),logout:s=>o(t,{params:s}),forgotPassword:s=>o(e,{params:s}),setPassword:s=>o(r,{params:s}),refreshToken:s=>o(a,{params:s})},c=()=>{A(),localStorage.clear()};export{_ as a,c as s};

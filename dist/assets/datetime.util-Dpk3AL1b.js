@@ -1,1 +1,0 @@
-function o(e){const{year:n,month:t,day:a}=e;return new Date(n,t-1,a,0,0,0,0).toISOString()}function r(e){const n=new Date(e),t=new Date;t.setHours(0,0,0,0);const a=t-n;return Math.ceil(a/(1e3*60*60*24))}export{o as a,r as c};

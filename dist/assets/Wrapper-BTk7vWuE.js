@@ -1,1 +1,0 @@
-import{_ as s,c as t,o as c,f as n,F as r}from"./index-Cn06d1yw.js";const a={},o={class:"w-[100%] max-w-full max-h-full relative flex items-center justify-center main-bg"},l={class:"w-[40%] flex justify-center min-w-[520px] max-h-full"};function f(e,i){return c(),t("div",o,[n("div",l,[r(e.$slots,"content")])])}const m=s(a,[["render",f]]);export{m as W};
