@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import { useForm } from 'vee-validate'
 import { useRouter, useRoute } from 'vue-router'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '@config/firebase.config'
+import { auth, setupFirebase } from '@config/firebase.config'
 
 import { useAuthStore } from '@store'
 import { useToast } from '@composables/useToast'
@@ -32,6 +32,11 @@ const { handleSubmit } = useForm({
 })
 
 onMounted(async () => {
+  // Ensure Firebase is initialized
+  if (!auth) {
+    setupFirebase()
+  }
+  
   const token = route?.query?.token
   if (token) {
     setAuthToken(token)
@@ -51,6 +56,11 @@ onMounted(async () => {
 })
 
 const handleEmailPasswordLogin = handleSubmit(async (values) => {
+  if (!auth) {
+    toast.danger('Firebase authentication is not properly configured')
+    return
+  }
+  
   const userCredential = await signInWithEmailAndPassword(
     auth,
     values.user_email,
